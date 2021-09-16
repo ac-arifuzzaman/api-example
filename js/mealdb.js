@@ -1,3 +1,29 @@
+// Enter button cliked function added
+/* const input = document.getElementById("search-field");
+input.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button-search").click();
+    }
+}); */
+
+/* document.getElementById("search-field")
+    .addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("button-search").click();
+        }
+    }); */
+
+document.getElementById('search-field').addEventListener('keyup', function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById('button-search').click();
+    }
+})
+
+// enter button clicked function ended
+
 const searchFood = () => {
     const searchField = document.getElementById('search-field');
     // console.log('get btn')
